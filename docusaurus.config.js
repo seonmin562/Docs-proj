@@ -12,7 +12,6 @@ import {themes as prismThemes} from 'prism-react-renderer';
 const config = {
   title: 'My Site',
   tagline: 'Dinosaurs are cool',
-  trailingSlash: false,
   favicon: 'img/favicon.ico',
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
@@ -30,6 +29,9 @@ const config = {
   // If you aren't using GitHub pages, you don't need these.
   organizationName: 'seonmin-universe', // Usually your GitHub org/user name.
   projectName: 'seonmin562.github.io', // Usually your repo name.
+  deploymentBranch: 'gh-pages',
+  // 소스 브랜치가 main인 경우 아래도 추가
+  trailingSlash: false,
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
