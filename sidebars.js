@@ -4,7 +4,6 @@ module.exports = {
       type: 'category',
       label: '시작 가이드',
       items: [
-        'intro/index',
         'intro/getting-started',
         'intro/installation',
         'intro/usage',
