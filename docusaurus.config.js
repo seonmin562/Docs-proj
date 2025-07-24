@@ -10,7 +10,7 @@ import {themes as prismThemes} from 'prism-react-renderer';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'My Site',
+  title: 'Docs Test',
   tagline: 'Dinosaurs are cool',
   favicon: 'img/favicon.ico',
 
@@ -27,12 +27,20 @@ const config = {
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'seonmin-universe', // Usually your GitHub org/user name.
-  projectName: 'seonmin562.github.io', // Usually your repo name.
+  organizationName: 'seonmin562', // Usually your GitHub org/user name.
+  projectName: 'Docs-proj', // Usually your repo name.
   deploymentBranch: 'gh-pages',
   // 소스 브랜치가 main인 경우 아래도 추가
   trailingSlash: false,
-
+  headTags: [
+    {
+      tagName: 'meta',
+      attributes: {
+        name: 'algolia-site-verification',
+        content: '70984A940AA80AF2',
+      },
+    },
+  ],
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
 
@@ -43,6 +51,21 @@ const config = {
     defaultLocale: 'en',
     locales: ['en'],
   },
+
+  scripts: [
+    {
+      src: 'https://cdn.botpress.cloud/webchat/v3.2/inject.js',
+      defer: true
+    },
+    {
+      src: 'https://files.bpcontent.cloud/2025/07/16/02/20250716020843-CKOC0F7Y.js',
+      defer: true
+    },
+    {
+    src: 'js/botpress-init.js',
+    defer: true
+  }
+  ],
 
   presets: [
     [
@@ -131,6 +154,12 @@ const config = {
         darkTheme: prismThemes.dracula,
       },
     }),
+
 };
+// docusaurus.config.js
+
+
+
 
 export default config;
+
