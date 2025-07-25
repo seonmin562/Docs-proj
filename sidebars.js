@@ -43,10 +43,7 @@ module.exports = {
           label: '일반',
           items: [
             'channel-settings/general/language',
-            'channel-settings/general/front',
-            'channel-settings/general/button',
-            'channel-settings/general/profile',
-            'channel-settings/general/verification',
+            'channel-settings/general/button'
           ],
         },
         {
@@ -54,7 +51,6 @@ module.exports = {
           label: '팀',
           items: [
             'channel-settings/team/members-bots',
-            'channel-settings/team/roles',
           ],
         },
         {
@@ -73,7 +69,6 @@ module.exports = {
       type: 'category',
       label: '개인 설정',
       items: [
-        'personal-settings/profile',
         'personal-settings/push',
         'personal-settings/account',
       ],
