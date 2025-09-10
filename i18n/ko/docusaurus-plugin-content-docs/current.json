@@ -1,0 +1,38 @@
+{
+  "version.label": {
+    "message": "Next",
+    "description": "The label for version current"
+  },
+  "sidebar.tutorialSidebar.category.시작하기": {
+    "message": "시작하기",
+    "description": "The label for category 시작하기 in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.워크플로우": {
+    "message": "워크플로우",
+    "description": "The label for category 워크플로우 in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.채널 설정": {
+    "message": "채널 설정",
+    "description": "The label for category 채널 설정 in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.채팅": {
+    "message": "채팅",
+    "description": "The label for category 채팅 in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.일반": {
+    "message": "일반",
+    "description": "The label for category 일반 in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.팀": {
+    "message": "팀",
+    "description": "The label for category 팀 in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.보안": {
+    "message": "보안",
+    "description": "The label for category 보안 in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.개인 설정": {
+    "message": "개인 설정",
+    "description": "The label for category 개인 설정 in sidebar tutorialSidebar"
+  }
+}

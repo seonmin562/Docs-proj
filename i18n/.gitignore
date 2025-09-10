@@ -1,0 +1,9 @@
+# Crowdin에서 다운로드된 번역 파일들
+# 소스 파일은 git에 포함하되, 번역된 파일은 CI에서 자동으로 생성
+**/docusaurus-plugin-content-docs/current/
+**/docusaurus-plugin-content-pages/
+**/docusaurus-plugin-content-blog/
+**/docusaurus-plugin-sitemap/
+
+# Crowdin 임시 파일
+.crowdin/

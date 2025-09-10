@@ -1,0 +1,54 @@
+name: Crowdin Sync
+
+on:
+  push:
+    branches: [ main, master ]
+    paths:
+      - 'docs/**'
+      - 'src/pages/**'
+      - 'blog/**'
+  workflow_dispatch:
+
+jobs:
+  sync-translations:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v4
+      with:
+        token: ${{ secrets.GITHUB_TOKEN }}
+        fetch-depth: 0
+    
+    - name: Setup Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '18'
+        cache: 'npm'
+    
+    - name: Install dependencies
+      run: npm ci
+    
+    - name: Install Crowdin CLI
+      run: npm install -g @crowdin/cli
+    
+    - name: Generate translation files
+      run: npm run write-translations
+    
+    - name: Upload source files to Crowdin
+      run: npm run crowdin:upload
+      env:
+        CROWDIN_PERSONAL_TOKEN: ${{ secrets.CROWDIN_PERSONAL_TOKEN }}
+    
+    - name: Download translations from Crowdin
+      run: npm run crowdin:download
+      env:
+        CROWDIN_PERSONAL_TOKEN: ${{ secrets.CROWDIN_PERSONAL_TOKEN }}
+    
+    - name: Commit and push changes
+      run: |
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+        git add i18n/
+        git diff --staged --quiet || git commit -m "Update translations from Crowdin"
+        git push

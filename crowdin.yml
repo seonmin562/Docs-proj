@@ -1,0 +1,23 @@
+# Crowdin 설정 파일
+# https://support.crowdin.com/configuration-file/
+
+project_id: "your-project-id"  # Crowdin 프로젝트 ID로 변경 필요
+api_token_env: CROWDIN_PERSONAL_TOKEN
+
+files:
+  - source: "/docs/**/*.md"
+    translation: "/i18n/%two_letters_code%/docusaurus-plugin-content-docs/current/%original_path%"
+    type: "markdown"
+    
+  - source: "/src/pages/**/*.md"
+    translation: "/i18n/%two_letters_code%/docusaurus-plugin-content-pages/%original_path%"
+    type: "markdown"
+    
+  - source: "/blog/**/*.md"
+    translation: "/i18n/%two_letters_code%/docusaurus-plugin-content-blog/%original_path%"
+    type: "markdown"
+
+# 언어 설정
+languages_mapping:
+  ko: "ko"
+  en: "en"
