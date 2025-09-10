@@ -6,6 +6,8 @@ on:
     paths:
       - 'docs/**'
       - 'src/pages/**'
+      - 'src/components/**'
+      - 'src/pages/**'
       - 'blog/**'
   workflow_dispatch:
 

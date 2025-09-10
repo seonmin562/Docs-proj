@@ -321,5 +321,26 @@
   "theme.tags.tagsPageTitle": {
     "message": "태그",
     "description": "The title of the tag list page"
+  },
+  "homepage.tutorial.button": {
+    "message": "Docusaurus Tutorial - 5min ⏱️"
+  },
+  "homepage.features.easy.title": {
+    "message": "Easy to Use"
+  },
+  "homepage.features.easy.description": {
+    "message": "Docusaurus was designed from the ground up to be easily installed and used to get your website up and running quickly."
+  },
+  "homepage.features.focus.title": {
+    "message": "Focus on What Matters"
+  },
+  "homepage.features.focus.description": {
+    "message": "directory."
+  },
+  "homepage.features.powered.title": {
+    "message": "Powered by React"
+  },
+  "homepage.features.powered.description": {
+    "message": "Extend or customize your website layout by reusing React. Docusaurus can be extended while reusing the same header and footer."
   }
 }

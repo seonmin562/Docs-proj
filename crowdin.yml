@@ -16,6 +16,22 @@ files:
   - source: "/blog/**/*.md"
     translation: "/i18n/%two_letters_code%/docusaurus-plugin-content-blog/%original_path%"
     type: "markdown"
+    
+  - source: "/src/**/*.js"
+    translation: "/i18n/%two_letters_code%/docusaurus-plugin-content-pages/%original_path%"
+    type: "javascript"
+    
+  - source: "/src/**/*.jsx"
+    translation: "/i18n/%two_letters_code%/docusaurus-plugin-content-pages/%original_path%"
+    type: "javascript"
+    
+  - source: "/src/**/*.ts"
+    translation: "/i18n/%two_letters_code%/docusaurus-plugin-content-pages/%original_path%"
+    type: "typescript"
+    
+  - source: "/src/**/*.tsx"
+    translation: "/i18n/%two_letters_code%/docusaurus-plugin-content-pages/%original_path%"
+    type: "typescript"
 
 # 언어 설정
 languages_mapping:
